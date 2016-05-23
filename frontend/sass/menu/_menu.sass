@@ -1,1 +1,60 @@
 @import "../bourbon/bourbon"
+nav
+  padding: 0
+  //border-top: 1px solid $blue_col
+  //border-bottom: 1px solid $yell_col
+  box-shadow: 2px 2px 6px rgba(0,0,0,.2)
+  .sf-arrows .sf-with-ul::after
+    border: none
+  .sf-menu
+    display: inline-block
+    margin: 0
+    padding: 0
+    li
+      background: none
+      &:hover
+        background: none
+  > ul,li
+    display: block
+    background: #fff!important
+    margin: 0
+    padding: 10px
+    a
+      text-decoration: none
+      //color: $font_menu
+      &:hover,
+      &.active
+        text-decoration: none
+        //color: $blue_col
+        //background-color: $yell_col
+.toggle-mnu
+  display: block
+  width: 28px
+  height: 28px
+  margin-top: 14px
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+  span:after
+    top: 18px
+  span
+    position: relative
+    display: block
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #000
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+  &.on span
+    background-color: transparent
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+.mobile-mnu
+  cursor: pointer

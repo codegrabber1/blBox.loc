@@ -83,7 +83,10 @@ gulp.task('sass:svg', function(){
 //script
 gulp.task('scripts', function(){
   return gulp.src([
-        'frontend/assets/jquery/dist/jquery.min.js'
+        'frontend/assets/jquery/dist/jquery.js',
+        'frontend/assets/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
+        'frontend/assets/superfish/dist/js/superfish.js',
+        'frontend/assets/animate.css/animate-css.js'
       ])
       .pipe(newer('public/js/'))
       .pipe(concat('all.js'))
@@ -108,7 +111,7 @@ gulp.task('clean', function(){
 
 // watch
 gulp.task('watch', function(){
-  var watcher = gulp.watch('frontend/sass/*.sass', ['sass']);
+  var watcher = gulp.watch('frontend/sass/**/*.sass', ['sass']);
   watcher.on('change', function(event){
     if(event.type === 'delete') {
       delete cached.caches['sass'][event.path];
