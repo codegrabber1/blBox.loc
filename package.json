@@ -1,0 +1,37 @@
+{
+  "name": "bluebox_jade",
+  "version": "1.0.0",
+  "description": "Start template with jade",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.12.5",
+    "chokidar": "^1.5.1",
+    "del": "^2.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^5.0.0",
+    "multipipe": "^0.3.0",
+    "uglifyjs": "^2.4.10",
+    "wiredep": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-pug-inheritance": "^0.1.1",
+    "gulp-resolver": "^0.2.0",
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "codegrabber",
+  "license": "ISC"
+}
