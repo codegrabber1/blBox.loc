@@ -1,0 +1,48 @@
+.tophead
+  width: 100%
+  background-color: $black_bg
+  color: $wht_font
+  .ticker-section
+    width: 100%
+    .ticker
+      overflow: hidden
+      height: 40px
+      .ticker-title
+        float: left
+        max-width: 210px
+        position: relative
+        text-transform: uppercase
+        padding: 7px 15px
+        z-index: 3
+      #typed-strings
+        margin: 10px 0
+        ul>li
+          display: inline-block
+          word-wrap: break-word
+      .typed-cursor
+        opacity: 1
+        -webkit-animation: blink 0.7s infinite
+        -moz-animation: blink 0.7s infinite
+        animation: blink 0.7s infinite
+      @keyframes blink
+        0%
+          opacity: 1
+        50%
+          opacity: 0
+        100%
+          opacity: 1
+      @-webkit-keyframes blink
+        0%
+          opacity: 1
+        50%
+          opacity: 0
+        100%
+          opacity: 1
+      @-moz-keyframes blink
+        0%
+          opacity: 1
+        50%
+          opacity: 0
+        100%
+          opacity: 1
+            

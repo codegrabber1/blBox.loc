@@ -28,4 +28,16 @@ jQuery(document).ready(function($){
     $(".main-mnu").slideToggle();
     return false;
   });// end top menu
+
+  // type text in top header
+  $("#typed-strings").ticker({
+    cursorOne: '_',
+    itemSpeed: 5000,
+    cursorSpeed: 100,
+    pauseOnHover: true,
+    fade: true,
+    fadeInSpeed: 600,
+    fadeOutSpeed: 300
+  });
+
 });

@@ -1,12 +1,32 @@
-// top menu
+// top head
+.tophead
+    .container
+        .row
+            .col-xs-12.col-sm-4.col-md-6
+                .ticker-section.clearfix
+                    .ticker
+                        .ticker-title
+                            img(src="images/point.png")
+                        #typed-strings.clearfix
+                            ul
+                                li.
+                                    Ticker item #1 Ticker item #1 Ticker item #1 Ticker item #1 
+                                li.
+                                    Ticker item #2 Ticker item #2 Ticker item #2 Ticker item #2
+                                li.
+                                    Ticker item #3 Ticker item #3 Ticker item #3 Ticker item #3
+            .col-xs-12.col-sm-4.col-md-6.
+                trick!!
+// menu
 nav
-   .row
-        .col-xs-12
-            .mobile-mnu.hidden-sm.hidden-md.hidden-lg
-                a.toggle-mnu.hidden-lg
-                    span
-            ul.sf-menu
-                li
-                    a(href="index.html") Головна
-                li
-                    a(href="contact.html") Контакти
+    .container-fluid
+       .row
+            .col-xs-12
+                .mobile-mnu.hidden-sm.hidden-md.hidden-lg
+                    a(href="#").toggle-mnu.hidden-lg
+                        span
+                ul.sf-menu
+                    li
+                        a(href="index.html") Головна
+                    li
+                        a(href="contact.html") Контакти

@@ -4,11 +4,62 @@ ul, ol {
 
 body {
   background-color: #fff;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #282828; }
+
+.tophead {
+  width: 100%;
+  background-color: #1d1e20;
+  color: #fff; }
+  .tophead .ticker-section {
+    width: 100%; }
+    .tophead .ticker-section .ticker {
+      overflow: hidden;
+      height: 40px; }
+      .tophead .ticker-section .ticker .ticker-title {
+        float: left;
+        max-width: 210px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 7px 15px;
+        z-index: 3; }
+      .tophead .ticker-section .ticker #typed-strings {
+        margin: 10px 0; }
+        .tophead .ticker-section .ticker #typed-strings ul > li {
+          display: inline-block;
+          word-wrap: break-word; }
+      .tophead .ticker-section .ticker .typed-cursor {
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 nav {
-  padding: 0;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); }
+  padding: 0; }
   nav .sf-arrows .sf-with-ul::after {
     border: none; }
   nav .sf-menu {
@@ -67,7 +118,8 @@ ul, ol {
 
 body {
   background-color: #fff;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #282828; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

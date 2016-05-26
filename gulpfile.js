@@ -86,7 +86,10 @@ gulp.task('scripts', function(){
         'frontend/assets/jquery/dist/jquery.js',
         'frontend/assets/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
         'frontend/assets/superfish/dist/js/superfish.js',
-        'frontend/assets/animate.css/animate-css.js'
+        'frontend/assets/animate.css/animate-css.js',
+        'frontend/assets/simplyscroll/jquery.simplyscroll.min.js',
+        'frontend/assets/jquery.ticker/jquery.ticker.js'
+
       ])
       .pipe(newer('public/js/'))
       .pipe(concat('all.js'))
