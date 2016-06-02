@@ -1,9 +1,9 @@
 .tophead
   width: 100%
-  background-color: $black_bg
-  color: $wht_font
   .ticker-section
     width: 100%
+    padding: 5px 0 0 10px
+    font-size: 12px
     .ticker
       overflow: hidden
       height: 40px
@@ -16,9 +16,10 @@
         z-index: 3
       #typed-strings
         margin: 10px 0
+        overflow: hidden
         ul>li
           display: inline-block
-          word-wrap: break-word
+          overflow: hidden
       .typed-cursor
         opacity: 1
         -webkit-animation: blink 0.7s infinite
@@ -45,4 +46,47 @@
           opacity: 0
         100%
           opacity: 1
-            
+.soclang_blocks
+  float: right
+  margin-right: 20px
+.soclang_blocks li
+  float: left
+  margin: 0 10px
+.soclang_blocks li a
+  font-size: 18px
+  color: $top_header_icon
+.date_block,
+.socicon_block,
+.lang_block
+ padding: 10px
+.date_block,.socicon_block
+  float: left
+.lang_block
+  float: right
+.date_block
+  border-right: 1px solid $bordr-left
+  padding-right: 20px
+.date_block p
+  margin: 0
+  font-size: 12px
+  background-color: #242527
+  padding: 5px 20px
+  color: $top_header_icon
+  @include borderRadius(4px)
+.lang_block
+  border-left: 1px solid $border-right
+.lang_block .fa
+  margin: 6px 8px
+.socicon_block
+  border-left: 1px solid $border-right
+  border-right: 1px solid $bordr-left
+.socicon_block li
+  padding: 1px 0
+.l_b_block
+  width: 100%
+  background-color: $bg_col
+  margin: 0
+  padding: 35px 0 35px 25px
+.b_banner
+  float: right
+  margin-right: 20px
