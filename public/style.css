@@ -17,6 +17,15 @@ p {
   margin: 0;
   padding: 0; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -40,6 +49,53 @@ aside {
 .content {
   margin: 0 20px 0 0;
   border: 1px solid red; }
+
+p.f_title,
+p.w_title {
+  background-color: #252729;
+  padding: 5px 15px;
+  font-size: 18px;
+  position: relative;
+  font-weight: 100;
+  line-height: 20px; }
+  p.f_title::before,
+  p.w_title::before {
+    content: "";
+    display: block;
+    width: 0;
+    padding: 0;
+    border-top: 12px solid #252729;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: 25px;
+    bottom: 0; }
+
+.f_content,
+.w_content {
+  border: 1px solid red;
+  margin: 10px 0; }
+  .f_content li,
+  .w_content li {
+    display: block;
+    float: none;
+    margin-bottom: 10px; }
+    .f_content li img,
+    .w_content li img {
+      float: left;
+      display: block;
+      margin-right: 15px; }
+    .f_content li a,
+    .w_content li a {
+      display: block;
+      font-weight: bold;
+      text-decoration: none; }
+      .f_content li a span,
+      .w_content li a span {
+        display: block;
+        font-weight: normal;
+        margin-left: 50px;
+        color: #4f5255; }
 
 .tophead {
   width: 100%; }
@@ -223,14 +279,15 @@ aside li {
   width: 50%;
   float: left; }
   aside li .fa_block {
-    float: left; }
+    float: left;
+    margin-left: 10px; }
   aside li .twitter,
   aside li .facebook,
   aside li .rss {
     width: 45px;
-    height: 45px;
     text-align: center;
     padding: 12px 0;
+    margin: 10px 25px 0 0;
     color: #fff;
     float: left; }
   aside li .twitter {
@@ -276,9 +333,54 @@ aside li {
       top: 10px;
       right: -7px; }
   aside li .count_block {
-    float: right;
-    margin: 8px 30px;
-    font-size: 14px; }
+    margin: 12px;
+    font-size: 13px;
+    font-weight: 400; }
+    aside li .count_block span {
+      display: block; }
+
+aside .sidebar_banner {
+  border: 1px solid; }
+
+aside .widget_block {
+  margin: 15px 0; }
+
+aside .w_title {
+  color: #fff; }
+
+aside .w_content {
+  margin: 20px 0; }
+  aside .w_content li {
+    width: 100%;
+    line-height: 20px;
+    margin: 20px 0;
+    position: relative; }
+  aside .w_content .w_com {
+    position: absolute;
+    background-color: #e84a4a;
+    color: #fff;
+    padding: 0 8px;
+    bottom: -2px;
+    left: -2px;
+    font-size: 12px; }
+  aside .w_content img {
+    background-color: #787878;
+    width: 70px;
+    height: 70px; }
+  aside .w_content a {
+    color: #475055;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 10px; }
+  aside .w_content p {
+    font-weight: 100;
+    font-size: 13px;
+    margin: 10px 0; }
+    aside .w_content p span {
+      background-color: #f2b620;
+      margin: 0 10px;
+      padding: 2px 8px;
+      color: #fff; }
 
 footer {
   border-top: 3px solid #e84a4a; }
@@ -295,47 +397,20 @@ footer {
     border-bottom: 1px solid #171719; }
     footer .top_footer .f_block {
       width: 100%;
-      line-height: 20px;
       font-family: 'Roboto', sans-serif;
       font-weight: 100;
       font-size: 14px;
       padding: 0 5px; }
-      footer .top_footer .f_block p.f_title {
-        background-color: #252729;
-        padding: 5px 15px;
-        font-size: 18px;
-        position: relative; }
-        footer .top_footer .f_block p.f_title::before {
-          content: "";
+      footer .top_footer .f_block .f_content a {
+        display: block;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none; }
+        footer .top_footer .f_block .f_content a span {
           display: block;
-          width: 0;
-          padding: 0;
-          border-top: 12px solid #252729;
-          border-right: 12px solid transparent;
-          border-left: 12px solid transparent;
-          position: absolute;
-          top: 25px;
-          bottom: 0; }
-      footer .top_footer .f_block .f_content {
-        border: 1px solid red; }
-        footer .top_footer .f_block .f_content li {
-          display: block;
-          float: none;
-          margin-bottom: 10px; }
-          footer .top_footer .f_block .f_content li img {
-            float: left;
-            display: block;
-            margin-right: 15px; }
-          footer .top_footer .f_block .f_content li a {
-            display: block;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none; }
-            footer .top_footer .f_block .f_content li a span {
-              display: block;
-              font-weight: normal;
-              margin-left: 50px;
-              color: #4f5255; }
+          font-weight: normal;
+          margin-left: 50px;
+          color: #4f5255; }
       footer .top_footer .f_block .f_email {
         margin: 10px 0; }
   footer .bot_footer {

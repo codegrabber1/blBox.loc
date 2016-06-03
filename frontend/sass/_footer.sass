@@ -14,41 +14,22 @@ footer
     border-bottom: 1px solid $bordr-left
     .f_block
       width: 100%
-      line-height: 20px
       font-family: 'Roboto', sans-serif
       font-weight: 100
       font-size: 14px
       // border: 1px solid red
       padding: 0 5px
-      p.f_title
-        background-color: $lightblack_bg
-        padding: 5px 15px
-        font-size: 18px
-        position: relative
-        &::before
-          @include bottomArrow($lightblack_bg)
       .f_content
-        border: 1px solid red
-        li
+        a
           display: block
-          float: none
-          margin-bottom: 10px
-          img
-            float: left
+          font-weight: bold
+          color: $wht_font
+          text-decoration: none
+          span
             display: block
-            // width: 70px
-            // height: 70px
-            margin-right: 15px
-          a
-            display: block
-            font-weight: bold
-            color: $wht_font
-            text-decoration: none
-            span
-              display: block
-              font-weight: normal
-              margin-left: 50px
-              color: #4f5255
+            font-weight: normal
+            margin-left: 50px
+            color: #4f5255
       .f_email
         margin: 10px 0
   .bot_footer
