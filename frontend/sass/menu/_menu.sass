@@ -1,36 +1,32 @@
 @import "../bourbon/bourbon"
 nav
-  padding: 0 10px 0 20px
-  border-bottom: 3px solid $blackpink_bg
+  padding: 0
+  //border-top: 1px solid $blue_col
+  //border-bottom: 1px solid $yell_col
+  //box-shadow: 2px 2px 6px rgba(0,0,0,.2)
   .sf-arrows .sf-with-ul::after
     border: none
   .sf-menu
     display: inline-block
     margin: 0
     padding: 0
-    a
-      text-decoration: none
-      font-size: 16px
-      border: none
-      color: $wht_font
-      .fa
-        font-size: 20px
     li
       background: none
       &:hover
         background: none
   > ul,li
     display: block
-    background: $blackpink_bg
+    background: #fff!important
     margin: 0
     padding: 10px
     a
       text-decoration: none
-      color: $wht_font
+      //color: $font_menu
       &:hover,
       &.active
         text-decoration: none
-        background-color: $blackpink_bg
+        //color: $blue_col
+        //background-color: $yell_col
 .toggle-mnu
   display: block
   width: 28px
@@ -49,7 +45,7 @@ nav
   span, span:after, span:before
     width: 100%
     height: 2px
-    background-color: $bg_col
+    background-color: #000
     transition: all 0.3s
     backface-visibility: hidden
     border-radius: 2px
